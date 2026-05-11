@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whatcable-py"
+version = "0.1.0"
+description = "Ubuntu/Linux USB-C cable capability viewer inspired by WhatCable"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "WhatCable Python contributors"}]
+keywords = ["usb-c", "usb", "power-delivery", "ubuntu", "sysfs"]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+whatcable-py = "whatcable_py.cli:main"
+"whatcable-py.gui" = "whatcable_py.gui:main"
+whatcable-py-gui = "whatcable_py.gui:main"
+
+[tool.setuptools]
+packages = ["whatcable_py"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
