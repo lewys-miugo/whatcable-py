@@ -1,5 +1,7 @@
 # WhatCable Py
 
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=lewys-miugo.whatcable-py)
+
 > What can this USB-C cable actually do on Ubuntu?
 
 WhatCable Py is a Python implementation of the WhatCable experience for Ubuntu and Ubuntu-based distributions. It keeps the same product goal and interaction style: show every visible USB-C/USB connection in plain English, call out likely charging bottlenecks, expose e-marker identity when Linux makes it available, and provide JSON/raw/watch modes for engineers.
