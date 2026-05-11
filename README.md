@@ -12,6 +12,12 @@ The app is read-only. It reads Linux kernel sysfs data from:
 
 Linux hardware support varies. If `/sys/class/typec` is empty, your kernel/firmware is not exposing USB-C controller state; WhatCable Py falls back to removable USB device speed and cannot read cable e-markers or USB-PD source options.
 
+## Origin and macOS Version
+
+WhatCable Py is an Ubuntu-focused Python port inspired by [Darryl Morley's WhatCable](https://github.com/darrylmorley/whatcable), the original macOS app for inspecting USB-C cable capabilities.
+
+If you use macOS, install the original WhatCable from <https://github.com/darrylmorley/whatcable> instead. This project is focused on Ubuntu and Ubuntu-based Linux distributions.
+
 ## Compatibility
 
 WhatCable Py targets supported Ubuntu releases with Python 3.10 or newer:
@@ -27,10 +33,9 @@ Ubuntu 20.04 is not a primary target because its default Python is older than 3.
 
 Ubuntu release status changes over time; check the official list at <https://releases.ubuntu.com/>.
 
-
 ## Install Directly From GitHub
 
-After publishing the repo, users can install it with pipx:
+Users can install it directly from GitHub with pipx:
 
 ```bash
 sudo apt update
@@ -143,6 +148,12 @@ If the directory is empty, WhatCable Py cannot read cable e-markers or USB-PD de
 ### No root required
 
 Normal usage should not need `sudo`. The app only reads sysfs.
+
+## Credits
+
+Created by [Lewys Miugo](https://github.com/lewys-miugo) as an Ubuntu-focused Python implementation inspired by [Darryl Morley's original WhatCable project](https://github.com/darrylmorley/whatcable).
+
+For macOS, use Darryl Morley's original app: <https://github.com/darrylmorley/whatcable>.
 
 ## Development
 
